@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <title>Quem é esse Pokémon</title>
+</head>
+<body>
+
+    <header>Quem é esse Pokémon?</header>
+    <div class="settings_area">
+        <div class="settings">
+            <span>Escolha o nível da sombra!</br>
+            Para começar o jogo.</span>
+            <div class="settings_shadow">
+                <div class="settings_shadow_info" data-shadow="lvl1"><img src="img/shadow20.png" alt="shadow20">Nível 1</div>
+                <div class="settings_shadow_info" data-shadow="lvl2"><img src="img/shadow15.png" alt="shadow20">Nível 2</div>
+                <div class="settings_shadow_info" data-shadow="lvl3"><img src="img/shadow0.png" alt="shadow20">Nível 3</div>
+            </div>
+            <div class="settings_difficult">
+
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="game_area">
+            <div class="settings_button"><img src="img/setting.png" alt="settings"/></div>
+        
+        <div class="left">
+            <div class="pokemon">
+                <div class="pokemon_area">
+                    <div class="image">
+                        <img class= "poke" src="" alt="pokemon">
+                    </div>
+                    <div class="poke_namediv"><span class="poke_name"></span></div> 
+                    <form class="form">
+                        <input
+                        id="input_texte"
+                        type="text"
+                        class="input__name"
+                        placeholder="Nome do Pokémon"
+                        autofocus
+                        required
+                    />
+                    <!-- <button class="input_button">Enviar</button>-->               
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="pokemon">
+                <div class="data_area">
+                    <div class="gen_area">Escolha a Geração
+                        <div class="gen">
+                            <div class="active" data-gen="1">GEN 1</div>
+                            <div data-gen="2">GEN 2</div>
+                            <div data-gen="3">GEN 3</div>
+                            <div data-gen="4">GEN 4</div>
+                            <div data-gen="5">GEN 5</div>
+                            <div data-gen="6">GEN 6</div>
+                            <div data-gen="7">GEN 7</div>
+                            <div data-gen="8">GEN 8</div>
+                        </div>
+                    </div>
+                    <div class="score_area">
+                        <div class="score_title">
+                            Pontuação
+                        </div>
+                        <div class="points">
+                            <div>
+                                <div>Corretos</div>
+                                <div class="point_correct">-</div>
+                            </div>
+                            <div>
+                                <div>Errados</div>
+                                <div class="point_wrong">-</div>
+                            </div>                    
+                        </div>
+                    </div>
+                    <div class="button_options">
+                        <button id="try_button">Tentar Outro</button>
+                        <button id="show_names">Mostra Opções</button>
+                    </div>
+                    <div class="options">
+                        <div class="options_area">
+                            <button data-options="1"></button>
+                            <button data-options="2"></button>
+                            <button data-options="3"></button>
+                            <button data-options="4"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        FEITO POR VITOR BARBEIRO
+    </footer>
+</body>
+</html>

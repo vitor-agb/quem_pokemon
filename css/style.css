@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: cen    ter;
+    flex-direction: column;
+    background-color: #edf2f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    top: 0;
+    color: #333;
+    margin: 20px 0;
+    font-size: clamp(20px, 5vw, 30px);
+    font-weight: bold;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    display: none;
+}
+
+.game_area {
+    box-shadow: 0px 0px 10px #ddd;
+    display: flex;
+    justify-content: center; 
+    width: fit-content;  
+    border-radius: 15px; 
+    position: relative;
+}
+
+.settings_area {
+    width: 100vw;
+    height: 100%;
+    background-color: #edf2f4;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #999;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #ddd;
+    text-align: center;
+}
+
+.settings_shadow {
+
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.settings_shadow_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-size: 13px;
+}
+
+.settings_shadow_info img {
+    width: 80px;
+}
+
+.settings_button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.settings_button img {
+    width:20px;    
+}
+
+.settings_button img:hover {
+   transform: rotate(360deg);    
+   transition: all 1.5s;
+}
+
+.left,
+.right {
+    padding: 10px;
+    background-color: #fff;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.right {
+    border-radius: 0 15px 15px 0;
+    margin-left: -14px;
+}
+
+.pokemon {
+    min-height: 100%;
+    width: 100%;
+}
+
+.pokemon_area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ef233c;
+    border: 1px solid #999;
+    border-radius: 15px;
+    padding: 10px;
+    height: 100%;
+}
+
+.data_area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.poke_namediv {
+    height: 25px;
+}
+
+.poke_name{
+    display: none;
+    text-align: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image: url("../pokeball.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: brightness(100%);
+}
+
+.image img {
+    width: 150px;
+    filter: brightness(0%);
+}
+
+.form {
+    display: flex;
+    padding: 20px;
+}
+
+.input_button  {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input {
+    width: 250px;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+}
+
+.poke {
+    display: none;
+    position: relative;
+}
+
+.points {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.score_area {
+    width: 270px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    height: 100%;
+}
+
+.points {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.gen_area {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    height: 100%;
+}
+
+.gen {
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-left: 10px;
+}
+.gen div,
+.options_area button,
+.button_options button,
+.input_button {
+    padding: 2px;
+    border: 2px solid #333;
+    margin: 2px;
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+.gen div:hover,
+.options_area button:hover,
+.button_options button:hover,
+.input_button:hover {
+    background-color: #333;
+}
+
+.options {
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 10px;
+    width: 270px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.button_options {
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.button_options button {
+    padding: 5px;
+}
+
+.options_area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-transform: capitalize;
+}
+
+.options_area button {
+    text-transform: capitalize;
+    padding: 5px;
+}
+
+div .active {
+    background-color: #333;
+    color: #fff;
+}
+
+
+footer {
+    margin: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 900px) {
+    .left,
+    .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 676px) {
+    .game_area {
+        flex-direction: column;
+        height: 100%;
+    }
+    .left {
+        border-radius: 15px 15px 0 0;
+    }
+
+    
+
+    .right {
+        margin-left: 0px;
+        border-radius: 0 0 15px 15px;
+    }
+    .image {
+        height: 100%;
+    }
+    main {
+        flex: none;
+    }
+
+    .score_area {
+        margin-bottom: 0;
+    }
+    .form {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 350px) {
+    .left,
+    .right {
+        padding: 0;
+    }
+}
