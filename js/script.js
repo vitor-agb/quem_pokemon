@@ -1,6 +1,6 @@
 const pokemonImage = document.querySelector('.poke');
 const form = document.querySelector('.form');
-const input = document.querySelector('#input_text');
+const input = document.querySelector('.input__name');
 const pointCorrect = document.querySelector('.point_correct');
 const pointWrong = document.querySelector('.point_wrong');
 const pokemonName = document.querySelector('.poke_name');
