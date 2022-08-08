@@ -1,6 +1,6 @@
 const pokemonImage = document.querySelector('.poke');
 const form = document.querySelector('.form');
-const input = document.querySelector('#input__text');
+const input = document.querySelector('#input_text');
 const pointCorrect = document.querySelector('.point_correct');
 const pointWrong = document.querySelector('.point_wrong');
 const pokemonName = document.querySelector('.poke_name');
@@ -167,9 +167,7 @@ function generateRandom(max, exclude) {
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    if(input !== blank) {
-    checkAnswers(input.value.toLowerCase());
-    };
+        checkAnswers(input.value.toLowerCase());
 });
 
 
