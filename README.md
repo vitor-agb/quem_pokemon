@@ -1,5 +1,5 @@
 # Quem é esse Pokemon?
-### My second personal project using API for request the image and Pokemon name.
+### My personal project using Javascript and API for request the image and Pokemon name.
 
 ### A game where your objective is to identify who is the pokemon shadow.
 You can have two options for this:
