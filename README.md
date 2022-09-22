@@ -3,7 +3,7 @@
 
 ### A game where your objective is to identify who is the pokemon shadow.
 You have two options for this:<br/>
-1: Typeing the pokemon name in the box "Nome do Pokémon" 
+1: Typeing the pokemon name in the box "Nome do Pokémon"<br/> 
 2: Choose the option "Mostrar Opções" where will show four name option, just choose by clicking.
 
 Some Features:
