@@ -2,7 +2,7 @@
 ### My personal project using Javascript and API for request the image and Pokemon name.
 
 ### A game where your objective is to identify who is the pokemon shadow.
-You can have two options for this:
+You have two options for this:<br/>
 1: Typeing the pokemon name in the box "Nome do Pokémon" 
 2: Choose the option "Mostrar Opções" where will show four name option, just choose by clicking.
 
